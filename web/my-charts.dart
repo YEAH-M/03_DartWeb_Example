@@ -7,14 +7,13 @@ import 'dart:js';
 
 void main(List<String> args) {
   DivElement dartStatus = querySelector('#dart-status') as DivElement;
-  dartStatus.text = 'Dart is running!';
+  dartStatus.text = 'What does a stupid pig do every day';
 
   var myData = JsObject.jsify([
-    {'year': '2001', 'population': 2},
-    {'year': '2002', 'population': 4},
-    {'year': '2003', 'population': 6},
-    {'year': '2004', 'population': 8},
-    {'year': '2005', 'population': 10},
+    {'year': 'eat', 'population': 3},
+    {'year': 'study', 'population': 5},
+    {'year': 'sleep', 'population': 7},
+    {'year': 'play', 'population': 9},
   ]);
 
   var chart = context['chart'];
